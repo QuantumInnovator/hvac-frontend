@@ -123,40 +123,40 @@ export default function SignupPage() {
             <div>
               <label className="block text-sm font-semibold mb-1.5" style={{ color: '#1F2B27' }}>Company Name</label>
               <input
-                type="text"
-                required
-                placeholder="ABC HVAC Services"
-                value={form.name}
-                onChange={(e) => setForm({ ...form, name: e.target.value })}
-                className="w-full rounded-xl px-4 py-3 text-sm bg-[#2A3B35] transition"
-                style={{ border: '1px solid rgba(31,43,39,0.14)' }}
-              />
+  type="text"
+  required
+  placeholder="ABC HVAC Services"
+  value={form.name}
+  onChange={(e) => setForm({ ...form, name: e.target.value })}
+  className="w-full rounded-xl px-4 py-3 text-sm bg-[#2A3B35] transition"
+  style={{ border: '1px solid rgba(31,43,39,0.14)', color: '#F4EFE6' }}
+/>
             </div>
             <div>
               <label className="block text-sm font-semibold mb-1.5" style={{ color: '#1F2B27' }}>Email</label>
               <input
-                type="email"
-                required
-                placeholder="you@company.com"
-                value={form.email}
-                onChange={(e) => setForm({ ...form, email: e.target.value })}
-                className="w-full rounded-xl px-4 py-3 text-sm bg-[#2A3B35] transition"
-                style={{ border: '1px solid rgba(31,43,39,0.14)' }}
-              />
+  type="email"
+  required
+  placeholder="you@company.com"
+  value={form.email}
+  onChange={(e) => setForm({ ...form, email: e.target.value })}
+  className="w-full rounded-xl px-4 py-3 text-sm bg-[#2A3B35] transition"
+  style={{ border: '1px solid rgba(31,43,39,0.14)', color: '#F4EFE6' }}
+/>
             </div>
             <div>
               <label className="block text-sm font-semibold mb-1.5" style={{ color: '#1F2B27' }}>Password</label>
               <div className="relative">
                 <input
-                  type={showPassword ? 'text' : 'password'}
-                  required
-                  minLength={6}
-                  placeholder="At least 6 characters"
-                  value={form.password}
-                  onChange={(e) => setForm({ ...form, password: e.target.value })}
-                  className="w-full rounded-xl px-4 py-3 pr-11 text-sm bg-[#2A3B35] transition"
-                  style={{ border: '1px solid rgba(31,43,39,0.14)' }}
-                />
+  type={showPassword ? 'text' : 'password'}
+  required
+  minLength={6}
+  placeholder="At least 6 characters"
+  value={form.password}
+  onChange={(e) => setForm({ ...form, password: e.target.value })}
+  className="w-full rounded-xl px-4 py-3 pr-11 text-sm bg-[#2A3B35] transition"
+  style={{ border: '1px solid rgba(31,43,39,0.14)', color: '#F4EFE6' }}
+/>
                 <button
                   type="button"
                   onClick={() => setShowPassword((prev) => !prev)}
